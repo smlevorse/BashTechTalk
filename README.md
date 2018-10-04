@@ -179,6 +179,11 @@ drwxrwxrwx 1 username username 4096 Oct  4 17:44 docs
 -rwxrwxrwx 1 username username    0 Oct  4 17:44 file1
 $
 ```
+You can set environment variables to change the way bash looks:
+```
+$ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$'
+```
+You can also create a `.bashrc` script to customize your terminal. My `.bashrc` is included in this repo. It's the standard Ubuntu `.bashrc` with a few customizations. 
 
 ## Scripting
 (Coming Soon)
